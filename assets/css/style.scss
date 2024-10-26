@@ -26,6 +26,7 @@ html{
 }
 body{
     background-color: #f1f1f1;
+    font-family: 'Inter-Regular', sans-serif;
 }
 .container{
 
@@ -153,8 +154,12 @@ aside .aside--news .aside-news--news-list li{
 }
 aside .aside--news .aside-news--news-list li:not(:last-child){
     
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 4em;
+
     width: 90%;
+    
+  
 
 }
 
@@ -213,8 +218,9 @@ section .bright{
 }
 
 section .bright .bright-heading{
-    color: red;
-    font-size: 1.8rem;
+
+    flex: 2;
+    font-size: 3rem;
  
 }
 
@@ -222,7 +228,7 @@ section .bright .bright-content{
   
     line-height: 1.5;
     font-size: 1.1rem;
-    
+    flex:1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
