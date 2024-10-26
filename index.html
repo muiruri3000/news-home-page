@@ -9,10 +9,10 @@
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 <main>
@@ -33,7 +33,7 @@
   <div class="container">
 
 <header>
-  <nav>
+  <nav aria-label="primary">
     <div class="banner-text">
       <h1>W.</h1>  
     </div>
@@ -47,7 +47,7 @@
       <li><a href="#">  Categories</a></li>
     </ul>
 
-    <button class="links--mobile hide-in-lg" >
+    <button class="links--mobile hide-in-lg" aria-label="close menu" aria-controls="close" aria-expanded="false">
       <img src="./assets/images/icon-menu.svg" alt="" id="menu">
     </button>
   </nav>
@@ -55,13 +55,13 @@
 
 
 
-<div class="bigImage">
+<div class="bigImage" role="banner">
 <img src="./assets/images/image-web-3-desktop.jpg" alt="">
 </div class="bigImage">
-<section >
-<div class="bright">
+<section role="bright-heading" >
+<div class="bright" >
 
-  <div class="bright-heading">
+  <div class="bright-heading" id="bright-heading">
   <h1>The Bright Future of Web 3.0?</h1>
 </div>
 <div class="bright-content">
@@ -141,10 +141,10 @@
  
 
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 
   <script src="./assets/js/engine.js"></script>
 </body>
